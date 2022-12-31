@@ -1,0 +1,17 @@
+
+.logout-button{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 575px) {  
+    .navbar-title{
+        text-align: center;
+        margin-left: 20px;
+        width: 100%;
+    }
+    .logout-button{
+        justify-content: center;
+    }
+    
+}
