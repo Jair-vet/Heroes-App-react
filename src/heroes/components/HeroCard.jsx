@@ -22,44 +22,26 @@ export const HeroCard = ({
     // const charactesByHero =  (<p>{ characters }</p>);
 
   return (
-    <div className='col'>
-        <div className="card">
-            <div className="row no-gutters">
-
-                <div className="card-info">
-                    <div className="col-4 img-card">
-                        <img  src={ heroImgaeUrl } className="card-img" alt={ superhero } />
-                    </div>
-
-                    <div className='body-card'>
-
+    <>
+        {/* container */}
+        <div className="card-center">
+            {/* Tarjeta completa */}
+            <div className="card-info">
+                {/* more info */}
+                <Link className='info' to={`/hero/${ id }`}>
+                    <div className="img-card">
+                        {/* Imgaen superheroe */}
+                        <img  src={ heroImgaeUrl } className="card-img-item" alt={ superhero } />
                         <div className="body-card-info">
-
-                            <h5 className="card-title">{ superhero }</h5>
-                            <p className="card-text">{ alter_ego }</p>
-
-                            {/* {
-                                ( alter_ego !== characters ) && charactesByHero
-                                ( alter_ego !== characters ) && <p>{ characters }</p>
-                            } */}
-                            <CharactersByHero characters={ characters } alter_ego={ alter_ego } />
-
-                            {/* <p className="card-text">
-                                <small className="text-muted">{ first_appearance }</small>
-                            </p> */}
-
-                            <Link className='info' to={`/hero/${ id }`}>
-                                More Info
-                            </Link>
-
-                            
+                            {/* Titulo */}
+                            <div className="title">
+                                <h5 className="card-title">{ superhero }</h5>
+                            </div>   
                         </div>
                     </div>
-                </div>
-
+                </Link>
             </div>
-
         </div>
-    </div>
+    </>
   )
 }

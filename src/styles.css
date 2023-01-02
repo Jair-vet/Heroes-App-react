@@ -6,59 +6,47 @@
 
 /* Card */
 .hero-card {
-    width: 100%;
-}
-.card {
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+   gap: 10px;
 }
 .card-info{
     display: flex;
-    text-align: center;
 }
 .img-card {
-    width: 50%;
+    /* width: 20px; */
+    height: 350px;
 }
-.body-card{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
+.img-card:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    /* transform: translateY(-10px); */
 }
-.body-card-info {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.info{
-    margin-left:inherit ;
-    text-decoration: none;
-    border: 1px solid;
-    padding: 5px;
+.card-img-item{
+    width: 200px;
     border-radius: 10px;
-    width: 100px;
+    object-fit: cover;
 }
-.info:hover{
-    background-color: blue;
-    color: white;
-    transition: 1s;
+.title{
+    position: absolute;
+}
+.card-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 9px;
+    text-transform: uppercase;
 }
 
-@media (max-width: 768px) {  
-    .row .no-gutters{
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero-card {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    }
+.info{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+.info:hover{
+    transition: 1s;
 }
 
 @media (max-width: 575px) {  
