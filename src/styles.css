@@ -49,6 +49,7 @@
     transition: 1s;
 }
 
+
 @media (max-width: 575px) {  
     .navbar-title{
         text-align: center;
