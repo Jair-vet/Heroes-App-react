@@ -14,10 +14,11 @@ export const HeroCard = ({
     publisher,
     alter_ego,
     first_appearance,
-    characters ,
+    characters,
+    image,
 }) => {
 
-    const heroImgaeUrl = `/assets/heroes/${ id }.jpg`;
+    const heroImgaeUrl = image;
 
     // const charactesByHero =  (<p>{ characters }</p>);
 
