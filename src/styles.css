@@ -4,6 +4,63 @@
     justify-content: end;
 }
 
+/* Card */
+.hero-card {
+    width: 100%;
+}
+.card {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.card-info{
+    display: flex;
+    text-align: center;
+}
+.img-card {
+    width: 50%;
+}
+.body-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.body-card-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    margin-left:inherit ;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+.info:hover{
+    background-color: blue;
+    color: white;
+    transition: 1s;
+}
+
+@media (max-width: 768px) {  
+    .row .no-gutters{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-card {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 575px) {  
     .navbar-title{
         text-align: center;
